@@ -40,19 +40,17 @@ observer.observe(el);
 
 // WhatsApp Form
 
-const form=document.getElementById("whatsappForm");
+const form = document.getElementById("whatsappForm");
 
-form.addEventListener("submit",function(e){
+if (form) {
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-e.preventDefault();
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
 
-const name=document.getElementById("name").value;
-
-const phone=document.getElementById("phone").value;
-
-const message=document.getElementById("message").value;
-
-const text=`Hello Truchoice Plumbing Services,
+        const text = `Hello Truchoice Plumbing Services,
 
 My Name: ${name}
 
@@ -61,23 +59,20 @@ Phone: ${phone}
 Problem:
 ${message}`;
 
-window.open(
+        window.open(
+            `https://wa.me/2348185557685?text=${encodeURIComponent(text)}`,
+            "_blank"
+        );
 
-`https://wa.me/2348185557685?text=${encodeURIComponent(text)}`,
+        form.reset();
+    });
+}
 
-"_blank"
+const menu = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
 
-);
-
-form.reset();
-
-});
-
-const menu=document.querySelector(".menu-toggle");
-const nav=document.querySelector(".nav-links");
-
-menu.addEventListener("click",()=>{
-
-nav.classList.toggle("active");
-
-});
+if (menu && nav) {
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+}

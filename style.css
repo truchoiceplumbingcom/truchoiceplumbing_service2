@@ -182,12 +182,6 @@ transform:translateY(-5px);
 
 @media(max-width:768px){
 
-.nav-links{
-
-display:none;
-
-}
-
 .hero-content h1{
 
 font-size:42px;
@@ -197,6 +191,8 @@ font-size:42px;
 .hero-content p{
 
 font-size:17px;
+
+}
 
 }
 
@@ -350,6 +346,8 @@ height:300px;
 
 }
 
+}
+
 /*==============================
 PREMIUM PLUMBING
 ==============================*/
@@ -465,6 +463,8 @@ padding:80px 30px;
 .premium-content h2{
 
 font-size:38px;
+
+}
 
 }
 
@@ -588,6 +588,8 @@ font-size:38px;
 
 }
 
+}
+
 /*==============================
 FEATURED PRODUCTS
 ==============================*/
@@ -666,6 +668,8 @@ height:250px;
 
 }
 
+}
+
 /*==============================
 REVIEWS
 ==============================*/
@@ -741,6 +745,8 @@ color:#12355B;
 .reviews-grid{
 
 grid-template-columns:1fr;
+
+}
 
 }
 
@@ -846,6 +852,8 @@ padding:0 22px;
 
 }
 
+}
+
 /*==============================
 EQUIPMENT & TEAM
 ==============================*/
@@ -917,6 +925,8 @@ grid-template-columns:1fr;
 .equipment-card img{
 
 height:240px;
+
+}
 
 }
 
@@ -1051,6 +1061,8 @@ padding:28px;
 
 }
 
+}
+
 /*==============================
 SERVICE AREAS
 ==============================*/
@@ -1124,6 +1136,8 @@ box-shadow:0 20px 45px rgba(0,0,0,.12);
 .service-area-image img{
 
 height:280px;
+
+}
 
 }
 
